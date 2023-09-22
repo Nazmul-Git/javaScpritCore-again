@@ -1,0 +1,3 @@
+const calcAverage=()=>{
+    const avg=
+}
