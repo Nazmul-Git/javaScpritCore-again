@@ -19,21 +19,24 @@ Test data:
 § Data Bonus 2: Dolphins score 97, 112 and 101. Koalas score 109, 95 and 106
 */
 
-const dolphinsFirst=96;
-const dolphinsSecond=108;
-const dolphinsThird=89;
+const dolphinsFirst=97;
+const dolphinsSecond=112;
+const dolphinsThird=101;
 
-const koalasFirst=88;
-const koalasSecond=91;
-const koalasThird=101;
+const koalasFirst=109;
+const koalasSecond=95;
+const koalasThird=106;
 
 const dolphinsAVG= (dolphinsFirst+dolphinsSecond+dolphinsThird)/3;
 const koalasAVG= (koalasFirst+koalasSecond+koalasThird)/3;
+console.log(dolphinsAVG,koalasAVG);
 
-if(dolphinsAVG>koalasAVG){
+if(dolphinsAVG>koalasAVG && dolphinsAVG>=100){
     console.log('dolphins winner');
-}else if(koalasAVG>dolphinsAVG){
+}else if(koalasAVG>dolphinsAVG && koalasAVG>=100){
     console.log('Koalas is winner ');
-}else{
+}else if(koalasAVG==dolphinsAVG && koalasAVG>=100 && dolphinsAVG>=100){
     console.log('score is draw');
+}else{
+    console.log('No team winner.')
 }
