@@ -12,3 +12,6 @@ console.log(aim); // Namaj aday koro.
 
 const yourAim= age >=7? 'Namaj aday koro.':'Tumi obuj sisu.';
 console.log(yourAim); // Namaj aday koro.
+
+// More short by use template literal
+console.log(`aim = ${age >=7? 'Namaj aday koro.':'Tumi obuj sisu.'}`)
