@@ -23,3 +23,18 @@ const calAge2= function(birthYear){
 }
 const age2=calAge2(1997);
 console.log(age2);
+
+
+// --------------------------------------------
+
+// Arrow Function
+const calAge3= birthYear=>2023-birthYear;
+console.log(calAge3(1999));
+
+
+const yearsJobRetirement=(birthYear,yourName)=>{
+    const age4=2023-birthYear;
+    const retirement=55-age4;
+    return `${yourName} retires in ${retirement} years.`;
+}
+console.log(yearsJobRetirement(2000, 'Siam'));
