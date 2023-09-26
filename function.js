@@ -38,3 +38,19 @@ const yearsJobRetirement=(birthYear,yourName)=>{
     return `${yourName} retires in ${retirement} years.`;
 }
 console.log(yearsJobRetirement(2000, 'Siam'));
+
+
+
+
+// example , call a function from another function
+const fruitPieces=(fruitQuantity)=>{
+    return fruitQuantity*4;
+}
+
+const fruitProcess=(apple, orange)=>{
+    const applePieces=fruitPieces(apple);
+    const orangePieces=fruitPieces(orange);
+    const juice= `Juice with ${applePieces} pieces of apple and ${orangePieces} pieces of orange.`
+    return juice;
+}
+console.log(fruitProcess(2,3))
