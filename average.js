@@ -40,3 +40,11 @@ if(dolphinsAVG>koalasAVG && dolphinsAVG>=100){
 }else{
     console.log('No team winner.')
 }
+
+// using function
+
+const calculationAVG=(a,b,c)=>(a+b+c)/3;
+
+const dolphinScore=calculationAVG(44,23,71);
+const koalasScore=calculationAVG(65,54,49);
+console.log(dolphinScore, koalasScore);
