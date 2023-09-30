@@ -11,7 +11,7 @@ const person1={
     calculateAge:(year)=>{
         return 2023-year;
     },
-    retirement:()=>{
+    retirement: function(){
         return `${this.firstName} is a programmer ??${this.programmer}`
     }
 } 
@@ -42,6 +42,6 @@ const addr=person1['address'];
 
 // console.log(person1.calculateAge(1998));
 // console.log(person1['calculateAge'](1998));
-
+person1.retirement();
 console.log(person1.retirement())
 
