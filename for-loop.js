@@ -42,3 +42,16 @@ for(let i=0; i<jonas.length; i++){
     console.log(jonas[i], typeof jonas[i]);
     
 }
+
+//  loop reverse
+const jonas2=[
+    'jonas',
+    'khanas',
+    2023-1998,
+    'teacher',
+    ['abul,kabul, labul']
+    
+];
+for(let i=jonas2.length-1; i>=0; i--){
+    console.log(jonas2[i]);
+}
