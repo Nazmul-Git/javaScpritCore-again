@@ -29,7 +29,7 @@ const koalasThird=106;
 
 const dolphinsAVG= (dolphinsFirst+dolphinsSecond+dolphinsThird)/3;
 const koalasAVG= (koalasFirst+koalasSecond+koalasThird)/3;
-console.log(dolphinsAVG,koalasAVG);
+// console.log(dolphinsAVG,koalasAVG);
 
 if(dolphinsAVG>koalasAVG && dolphinsAVG>=100){
     console.log('dolphins winner');
@@ -47,4 +47,22 @@ const calculationAVG=(a,b,c)=>(a+b+c)/3;
 
 const dolphinScore=calculationAVG(44,23,71);
 const koalasScore=calculationAVG(65,54,49);
-console.log(dolphinScore, koalasScore);
+// console.log(dolphinScore, koalasScore);
+
+
+
+
+// using array & loop
+
+const dolphin=[97,112,101];
+const kolas=[109,95,109];
+
+const calculateAverage=(arr)=>{
+    let sum=0;
+    for(let i=0; i<arr.length; i++){
+        sum+=arr[i];
+    }
+    console.log(sum)
+    return sum/arr.length;
+}
+console.log(calculateAverage(dolphin), calculateAverage(kolas));
