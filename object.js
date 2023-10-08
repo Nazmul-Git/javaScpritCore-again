@@ -12,10 +12,11 @@ const person1={
         return 2023-year;
     },
     retirement: function(){
-        return `${this.firstName} is a programmer ??${this.programmer}`
+        return this.result=`${this.firstName} is a programmer ??${this.programmer}`;
     }
 } 
-
+person1.retirement();
+console.log(person1.result);
 
 // console.log(person1.firstName, person1.age); // Dot notation
 
@@ -42,6 +43,5 @@ const addr=person1['address'];
 
 // console.log(person1.calculateAge(1998));
 // console.log(person1['calculateAge'](1998));
-person1.retirement();
-console.log(person1.retirement())
+
 

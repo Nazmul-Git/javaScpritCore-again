@@ -10,7 +10,7 @@ console.log(friends); // [ 'abul', 'kabul', 'cabul' ]
 
 // wait friends variable declared as const that not changeable.
 // but changed the value of 2 index. how???
-// The reason is only primitive value are mutable/changeable. array and object are not primitive.
+// The reason is only primitiv e value are mutable/changeable. array and object are not primitive.
 
 //Mutable refers to data types that can be access or changed after they have been created and stored in memory.
 
