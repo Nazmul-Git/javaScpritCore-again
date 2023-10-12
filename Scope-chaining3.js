@@ -9,6 +9,14 @@ function calAge(birthYear){
     // 1. firstName not found in printAge()
     
     console.log(output);
+
+    if(birthYear<=2006){
+        const str=`You are adult ${firstName}`;
+        console.log(str);
+        var identity=true;
+    }
+    // console.log(str);  //ReferenceError: str is not defined
+    // console.log(identity); //true
   }
   printAge();
   return age;
