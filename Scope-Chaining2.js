@@ -21,8 +21,11 @@ function third(){
 }
 
 /*
- first() & third() are different-different function not in a functional scope.
- So , in the third() we did not get the access to other different function. (first()-> b, second()-> c) ;
+ * third() is called from function-scope but this function, outside his parent function/global-scope.
+   So the point is, in this situation scope-chaining is not work.
+ 
+ *first() & third() are different-different function not in a functional scope.
+  So , in the third() we did not get the access to other different function. (first()-> b, second()-> c) ;
 
- Into third() , give the b & c value as a error. ReferenceError: b & c is not defined
+ *Into third() , give the b & c value as a error. ReferenceError: b & c is not defined
 */
