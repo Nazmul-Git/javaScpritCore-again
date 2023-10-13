@@ -1,4 +1,4 @@
-console.log(me);   //undefined
+// console.log(me);   //undefined
 // console.log(job);  //ReferenceError: Cannot access 'job' before initialization
 // console.log(year); //ReferenceError: Cannot access 'year' before initialization
 
@@ -10,7 +10,7 @@ const year=1998;
 
 
 // function
- console.log(addDecl(2,3)); //5
+//  console.log(addDecl(2,3)); //5
 //  console.log(addExp(2,3));     //ReferenceError: Cannot access 'addExp' before initialization
 // console.log(addArrow(2,3));   //ReferenceError: Cannot access 'addArrow' before initialization
 // console.log(subExp(3,2));    //TypeError: subExp is not a function
@@ -33,4 +33,17 @@ const year=1998;
  }
 
  var subArrow=(a,b)=>a-b;
- 
+
+
+
+//  example of, hoisting will danger !!!!!!!!!!!!!!!!!!
+console.log(undefined);
+
+if(!products) deleteAll();
+var products=5;
+
+function deleteAll(){
+    console.log('deleted')
+}
+
+
