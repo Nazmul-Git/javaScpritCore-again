@@ -9,10 +9,12 @@ const jonas={
         console.log(2023-this.year);
 
         // this in function expression
-        
+        const self=this; //assigning this in a variable
         const calAgeExpr=function(){
-            console.log(this);  // target the browser window
+            // console.log(this);  // target the browser window
             console.log(this.year); //undefined
+            console.log(self); //jonas object
+            console.log(self.year); //1960
             
         };
         calAgeExpr();
