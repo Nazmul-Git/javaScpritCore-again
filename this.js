@@ -1,3 +1,5 @@
+// this keyword
+
 // var firstName='sunny'; // when we declared a global variable var,
 //for arrow function, var create a global variable on browser window.
 
@@ -38,3 +40,18 @@ const jonas = {
 // jonas.calAge(); //output: 28
 jonas.calName(); //undefined & this target browser window  //when we declare var firstName then output: sunny which come from browser--> window--> firstName
 jonas.calAge();
+
+
+//$$$$$$$$$$$ arguments keyword
+const addExpr=function(a,b){
+    console.log(arguments);
+    return a+b;
+}
+// addExpr(2,3,4,8,1,6); // is an array ! yes
+
+const addInArrow=(a,b)=>{
+    console.log(arguments);
+    return a+b;
+};
+addInArrow(2,5,7,3,5); //ReferenceError: arguments is not defined
+
