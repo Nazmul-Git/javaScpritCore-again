@@ -39,8 +39,22 @@ me2Copy.age=1;
 //Copying object but still in same memory reference.Its call shallow copy .Let's see-----
 me2Copy.language.push('react.js');
 me2Copy.language.push('node.js');
-console.log(me2);  // [ 'c', 'js', 'react.js', 'node.js' ]
-console.log(me2Copy); // [ 'c', 'js', 'react.js', 'node.js' ]
+console.log(me2);  
+/**
+ me2 {
+  name: 'sunny',
+  age: 25,
+  language: [ 'c', 'js', 'react.js', 'node.js' ]
+}
+ */
+console.log(me2Copy); 
+/**
+ me2Copy {
+  name: 'sunny',
+  age: 1,
+  language: [ 'c', 'js', 'react.js', 'node.js' ]
+}
+ */
 // so, still in same memory reference.
 
 
