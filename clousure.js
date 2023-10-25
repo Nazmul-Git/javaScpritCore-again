@@ -24,3 +24,5 @@ const newPassport= (sunny) =>{
 };
 newPassport(sunny);
 checkIn(flight,sunny);
+
+// Passing by value & passing by reference,but actually js passing by value if value will be reference type so the value would be stored in memory.
